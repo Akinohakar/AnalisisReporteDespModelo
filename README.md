@@ -4,9 +4,13 @@
 
 Varia para su analisis
 
-##Caracteristicas Dataset
-Es un dataset de personas con anemia de kaggle
+##  Caracteristicas Dataset
+Dataset de personas con anemia de kaggle
+
+
 Link:
+
+
 https://www.kaggle.com/datasets/biswaranjanrao/anemia-dataset
 
 ### Variables independientes
