@@ -1,6 +1,6 @@
 # Analisis Reporte y Reporte Sobre Desempeño modelo
 
-##Arquitectura del Modelo
+## Arquitectura del Modelo
 
 Varia para su analisis
 
@@ -9,7 +9,7 @@ Es un dataset de personas con anemia de kaggle
 Link:
 https://www.kaggle.com/datasets/biswaranjanrao/anemia-dataset
 
-###Variables independientes
+### Variables independientes
 
 Gender: 0 - male, 1 - female
 
@@ -25,16 +25,20 @@ MCHC: MCHC stands for mean corpuscular hemoglobin concentration. It's a measure 
 
 MCV: MCV stands for mean corpuscular volume. An MCV blood test measures the average size of your red blood cells.
 
-###Variable dependientes
+### Variable dependientes
 
 La variable dependiente que queremos predecir correctamente a partir de nuestras caracteristicas es si la persona tiene anemia o no
 
-##Preprocesamiento
+## Preprocesamiento
 
 Se cambio en la caracteristica de Genero de labael encoding a 1-hot-enconding
 
-##Resultados
+## Resultados
 
 Se realizarion varias comparaciones,el modelo elejido finalmente tiene:
+
+
 Training Score 0.952112676056338
+
+
 Testing Score 0.9634831460674157
