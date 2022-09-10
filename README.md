@@ -35,7 +35,7 @@ La variable dependiente que queremos predecir correctamente a partir de nuestras
 
 ## Preprocesamiento
 
-Se cambio en la caracteristica de Genero de labael encoding a 1-hot-enconding
+Se cambio en caracteristica de Genero los valores categoricos de label encoding a 1-hot-enconding
 
 ## Resultados
 
