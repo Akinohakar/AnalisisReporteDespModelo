@@ -34,7 +34,7 @@ from sklearn.model_selection import train_test_split #For Training/Cross-Validat
 from sklearn.neural_network import MLPClassifier
 from sklearn import preprocessing
 import matplotlib.pyplot as plt #For graphing
-
+from sklearn.metrics import confusion_matrix 
 
 #Preparacion de dataset
 DF=pd.read_csv("./Dataset/anemia.csv")
@@ -122,3 +122,35 @@ print("Testing Score",anemia_nn_3.score(test_x,test_y))
 print("---------------------------Predicciones--------------------------------------")
 for i in range(0,100,10):
     print("Anemia? Estimado",anemia_nn_3.predict([DF_Xclean.loc[i]]),"Real",df_y[i])
+    
+print("--------------------------Metricas de Desempeño del modelo seleccionado(2 capas)-----------------")
+cm = confusion_matrix(test_y, anemia_nn_2.predict(test_x)) 
+print(cm)
+
+def metricas_rendimiento(matriz_confusion):
+    exactitud = (matriz_confusion[0][0] + matriz_confusion[1][1]) / (
+                matriz_confusion[0][0] + matriz_confusion[0][1] + matriz_confusion[1][0] + matriz_confusion[1][1])
+
+    try:
+        precision = matriz_confusion[0][0] / (matriz_confusion[0][0] + matriz_confusion[1][0])
+    except:
+        precision = 0
+
+    exhaustividad = matriz_confusion[0][0] / (matriz_confusion[0][0] + matriz_confusion[0][1])
+
+    try:
+        puntaje_F1 = (2 * precision * exhaustividad) / (precision + exhaustividad)
+    except:
+        puntaje_F1 = 0
+
+    return exactitud, precision, exhaustividad, puntaje_F1
+
+acc, prec, recall, F1_score = metricas_rendimiento(cm)
+
+print("=============================================")
+print("Metricas de rendimiento para modelo numero")
+print(f"Exactitud     : {acc}")
+print(f"Precision     : {prec}")
+print(f"Exhaustividad : {recall}")
+print(f"Puntaje F1    : {F1_score}")
+print("=============================================\n")
