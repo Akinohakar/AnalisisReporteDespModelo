@@ -1,16 +1,17 @@
 # Analisis Reporte y Reporte Sobre Desempeño modelo
 
+## Reporte Modelo
+
+El documento pdf con reporte y Analisis se encuentra en la carpeta MRAR junto al archivo ejecutable 
+
 ## Arquitectura del Modelo
 
 Varia para su analisis
 
 ##  Caracteristicas Dataset
-Dataset de personas con anemia de kaggle
+Dataset de personas con anemia y sus caracteristicas obtenido  de kaggle
 
-
-Link:
-
-
+Link de dataset:
 https://www.kaggle.com/datasets/biswaranjanrao/anemia-dataset
 
 ### Variables independientes
