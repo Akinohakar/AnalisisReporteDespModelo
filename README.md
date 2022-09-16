@@ -49,3 +49,6 @@ Training Score 0.952112676056338
 
 
 Testing Score 0.9634831460674157
+### Metricas
+![image](https://user-images.githubusercontent.com/43545831/190538341-5b20fd91-1ed1-494f-8511-70132cc59005.png)
+
